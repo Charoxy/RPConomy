@@ -1,0 +1,16 @@
+[
+{
+  "modid": "rpconomy",
+  "name": "RPConomy",
+  "description": "Mods for Economy of serveur RP ",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://discord.gg/gE63VVkBTs",
+  "updateUrl": "https://github.com/Charoxy/RPConomy",
+  "authorList": ["Charoxy"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
