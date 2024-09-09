@@ -2,6 +2,7 @@ package fr.charoxy.rpconomy;
 
 import fr.charoxy.rpconomy.common.CommonProxy;
 import fr.charoxy.rpconomy.common.network.bank.AtmPacket;
+import fr.charoxy.rpconomy.common.network.money.SyncMoneyPacket;
 import fr.charoxy.rpconomy.server.BDDConnexion;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -28,7 +29,7 @@ public class RpConomy {
         proxy.preInit(event.getSuggestedConfigurationFile());
         network = NetworkRegistry.INSTANCE.newSimpleChannel(References.MODID);
         network.registerMessage(AtmPacket.class, AtmPacket.class, 0, Side.SERVER);
-
+        network.registerMessage(SyncMoneyPacket.class, SyncMoneyPacket.class, 1, Side.CLIENT);
     }
 
     @Mod.EventHandler
