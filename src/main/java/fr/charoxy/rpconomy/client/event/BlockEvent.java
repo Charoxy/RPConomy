@@ -26,7 +26,7 @@ public class BlockEvent {
         EntityPlayer player = event.getEntityPlayer();
         Block block = player.getEntityWorld().getBlockState(event.getPos()).getBlock();
 
-        if(block.getRegistryName().toString().equals("minecraft:gold_block")) {
+        if(block.getRegistryName().toString().equals("rpconomy:atm")){
             if(event.getHand() == EnumHand.OFF_HAND) return;
             mc.displayGuiScreen(new AtmGui());
         }

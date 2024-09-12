@@ -17,7 +17,7 @@ public class HudEvent {
         Minecraft mc = Minecraft.getMinecraft();
         if(event.getType() == RenderGameOverlayEvent.ElementType.ALL) {
 
-            mc.fontRenderer.drawStringWithShadow("Money : " + mc.player.getCapability(MoneyStorage.MONEY_CAPABILITY,null).getMoney(), 0, 0, 0xFFFFFF);
+            //mc.fontRenderer.drawStringWithShadow("Money : " + mc.player.getCapability(MoneyStorage.MONEY_CAPABILITY,null).getMoney(), 0, 0, 0xFFFFFF);
 
         }
 
